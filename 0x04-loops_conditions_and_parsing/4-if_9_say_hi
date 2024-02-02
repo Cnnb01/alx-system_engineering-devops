@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 9 times then "Hi" then "Best School" one last time
-for ((i=0; i<10; i++)); do
-    echo "Best School"
-        if [ "$i" -eq 8 ]
+count=0
+while [ $count -lt 11 ]; do
+        if [ "$count" -eq 9 ]
         then
             echo "Hi"
+        else
+            echo "Best School"
         fi
+        count=$((count + 1))
 done

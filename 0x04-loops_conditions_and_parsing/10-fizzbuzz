@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# some comment
+# fizzuzz
 count=1
 while [ $count -lt 101 ]; do
     if ((count % 15 == 0)); then
