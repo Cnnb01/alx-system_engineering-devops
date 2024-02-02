@@ -6,8 +6,8 @@ while [ $Hour -lt 13 ]; do
 echo "Hour: " $Hour
     while [ $minutes -lt 60 ]; do
     echo $minutes
-    minutes=$[$minutes + 1]
+    minutes=$((minutes + 1))
     done
     minutes=1
-Hour=$[$Hour + 1]
+Hour=$((Hour + 1))
 done

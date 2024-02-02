@@ -3,7 +3,7 @@
 count=1
 while [ $count -lt 21 ]; do
 echo $count
-count=$[$count + 1]
+count=$((count + 1))
     if [ $count -eq 5 ]; then
         echo "bad luck from China"
     elif [ $count -eq 10 ]; then

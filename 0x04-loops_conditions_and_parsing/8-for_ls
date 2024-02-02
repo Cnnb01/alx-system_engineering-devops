@@ -2,5 +2,5 @@
 # This script displays the content of the current directory in a list format
 inst=$(ls)
 for i in $inst; do
-echo $i | cut -c 3-
+echo "$i" | cut -c 3-
 done

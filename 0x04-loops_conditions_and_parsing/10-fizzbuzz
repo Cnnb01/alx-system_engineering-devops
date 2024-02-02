@@ -2,14 +2,14 @@
 # some comment
 count=1
 while [ $count -lt 101 ]; do
-    if (($count % 15 == 0)); then
+    if ((count % 15 == 0)); then
         echo "FizzBuzz"
-    elif (($count % 5 == 0)); then
+    elif ((count % 5 == 0)); then
         echo "Buzz"
-    elif (($count % 3 == 0)); then
+    elif ((count % 3 == 0)); then
         echo "Fizz"
     else
         echo $count
     fi
-    count=$[$count + 1]
+    count=$((count + 1))
 done
