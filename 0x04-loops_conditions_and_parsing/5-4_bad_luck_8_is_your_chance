@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School"  but on the 4th loop it displays "bad luck" and in 8th loop where it displays "good luck"
+count=0
+while [ $count -lt 8 ]; do
+echo "Best School"
+count=$[$count + 1]
+    if [ $count -eq 3 ]; then
+        echo "bad luck"
+    elif [ $count -eq 6 ]; then
+        echo "good luck"
+    fi
+done

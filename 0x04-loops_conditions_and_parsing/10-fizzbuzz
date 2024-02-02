@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# some comment
+count=1
+while [ $count -lt 101 ]; do
+    if (($count % 15 == 0)); then
+        echo "FizzBuzz"
+    elif (($count % 5 == 0)); then
+        echo "Buzz"
+    elif (($count % 3 == 0)); then
+        echo "Fizz"
+    else
+        echo $count
+    fi
+    count=$[$count + 1]
+done
