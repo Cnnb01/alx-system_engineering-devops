@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#This script kills the process 7-highlander.
 proc=$(pgrep "7-highlander")
 kill -15 "$proc"

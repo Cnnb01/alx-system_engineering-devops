@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# This script stops 4-to_infinity_and_beyond process.
 proc=$(ps aux | pgrep "4-to_infinity_and_beyond" | awk "\$0 !~ /grep/ {print \$2}")
 pkill -f "$proc"
