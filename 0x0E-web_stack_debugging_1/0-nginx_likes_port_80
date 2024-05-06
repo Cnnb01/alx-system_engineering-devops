@@ -6,9 +6,9 @@ sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo chown "$USER":"$USER" /var/www/html/index.nginx-debian.html
 # configure nginx to listen on all IPv4 addresses
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+#rm /etc/nginx/sites-enabled/default
+#ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
-#sudo sed i 's/listen 80;/listen *:80:/g' /etc/nginx/nginx.conf
+sudo sed -i 's/listen 80;/listen *:80:/g' /etc/nginx/nginx.conf
 
 sudo service nginx restart
