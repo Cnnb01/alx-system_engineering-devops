@@ -1,0 +1,4 @@
+sudo apt update && sudo apt upgrade -y
+sudo apt-get install ufw -y
+sudo ufw allow 22,80,443/tcp
+sudo ufw enable
