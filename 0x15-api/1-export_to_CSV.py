@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This script fetches and displays information about an
-employee's todo list progress.
+employee's todo list progress as a csv.
 """
 from requests import get
 from sys import argv
