@@ -1,8 +1,0 @@
-#!/usr/bin/python3
-
-import urllib.request
-
-
-def an_api(ID):
-    request_url = urllib.request.urlopen("https://jsonplaceholder.typicode.com/todos/1")
-    print(request_url)
