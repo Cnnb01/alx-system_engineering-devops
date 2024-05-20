@@ -10,15 +10,13 @@ if __name__ == "__main__":
     users_id = argv[1]
 
     # fething user's info
-    users_url = "https://jsonplaceholder.typicode.com/users/{}".format
-    (users_id)
-    response = get(users_url)
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(users_id)
+    response = get(url)
     username = response.json().get("username")
 
     # fething user's todo list
-    users_todos = "https://jsonplaceholder.typicode.com/users/{}/todos".format
-    (users_id)
-    response = get(users_todos)
+    td = "https://jsonplaceholder.typicode.com/users/{}/todos".format(users_id)
+    response = get(td)
     tasks = response.json()
 
     with open('{}.csv'.format(users_id), 'w') as file:
